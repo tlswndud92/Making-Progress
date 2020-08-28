@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>Project-no.1</title>
+  <meta charset = "utf-8">
+  <h1><a href="index.html">How to make website</a></h1>
+  <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+<div id ="grid">
+<ol>
+  <li><a href="project1.html">Website`s function</a></li>
+  <li><a href="project2.html">power of websites</a></li>
+  <li><a href="project3.html">What we need to make website?</a></li>
+  <li><a href="project4.html">How can I upload my website to the server?(Web Hosting)</a></li>
+  <li><a href="project5.html">How can I upload my website to the server?(Web Server)</a></li>
+</ol>
+<div>
+  <h2>Website`s definition</h2>
+<div class="a">
+ <p>A <span>website</span>  (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Notable examples are wikipedia.org, google.com, and amazon.com.
+
+All publicly accessible <span>websites</span>  collectively constitute the World Wide Web.</p>
+<p>There are also private <span>websites</span>  that can only be accessed on a private network, such as a company's internal <span>website</span>  for its employees.
+
+<span>websites</span>  are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment, or social networking.</p><p> Hyperlinking between web pages guides the navigation of the site, which often starts with a home page.
+
+Users can access <span>websites</span>  on a range of devices, including desktops, laptops, tablets, and smartphones. The software application used on these devices is called a web browser.
+</p>
+
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value === 'night') {
+target.style.backgroundColor='black';
+target.style.color='white';
+this.value='day';
+
+var alist = document.querySelectorAll('a');
+var i = 0;
+while(i<alist.length){
+  alist[i].style.color = 'powderblue'
+  i=i+1;
+}
+}else{
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value='night';
+
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i<alist.length){
+    alist[i].style.color = 'blue'
+    i=i+1;
+}
+}
+">
+</div>
+  </body>
+</html>

@@ -5,6 +5,8 @@
    <title>Website`s function</title>
     <h1><a href="index.html">How to make website</a></h1>
     <link rel ="stylesheet" href="style.css">
+    <script src = "colors.js">
+    </script>
   </head>
   <body>
   <div id ="grid">
@@ -24,30 +26,7 @@
 
 <p>So where do you begin narrowing down the requirements for your website? Use this article to guide you through the process of defining your website’s <span>functionality</span> needs.</p>
 <input type="button" value="night" onclick="
-var target = document.querySelector('body');
-if(this.value === 'night') {
-target.style.backgroundColor='black';
-target.style.color='white';
-this.value='day';
-
-var alist = document.querySelectorAll('a');
-var i = 0;
-while(i<alist.length){
-  alist[i].style.color = 'powderblue';
-  i=i+1;
-}
-}else{
-  target.style.backgroundColor='white';
-  target.style.color='black';
-  this.value='night';
-
-  var alist = document.querySelectorAll('a');
-  var i = 0;
-  while(i<alist.length){
-    alist[i].style.color='blue';
-    i=i+1;
-  }
-}
+nightDayHandler(this);
 ">
   </div>
     </body>
